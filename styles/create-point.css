@@ -1,0 +1,152 @@
+#page-create-point{
+    width:80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#page-create-point header{
+    display:flex;
+    margin-top:48px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-create-point header a{
+    color: var(--title-color);
+    display:flex;
+    align-items: center;
+}
+
+#page-create-point header a span{
+    width:20px;
+    height:22px;
+    display:flex;
+    background-image: url('../assets/arrow-left.svg');
+    margin-right: 16px;
+}
+
+#page-create-point form{
+    background-color: white;
+    padding: 64px;
+    max-width: 80%;
+    border-radius:8px;
+    margin:80px auto;
+}
+
+form h1{
+    font-size: 2em;
+}
+
+form fieldset{
+    margin-top:64px;
+    border:0;
+}
+
+form legend {
+    margin-bottom:40px;
+}
+
+form legend h2{
+    font-size:1.5em;
+}
+
+
+#page-create-point form .field{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    margin-bottom:24px;
+}
+
+#page-create-point form .field-group{
+    display:flex;
+}
+
+form input,
+form select{
+    background-color: #f0f0f5;
+    border:0;
+    padding:16px 24px;
+    font-size:1.1em;
+    border-radius:8px;
+}
+
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label{
+    font-size:1.1em;
+    margin-bottom:8px;
+}
+
+#page-create-point form .field-group .field + .field{
+    margin-left:5%;
+    max-width: 45%;
+}
+
+form button{
+    width:260px;
+    height: 56px;
+
+    background-color: var(--primary-color);
+
+    font-size:16px;
+    color:white;
+    font-weight: bold;
+    
+    border:0;
+    border-radius:8px;
+    
+    margin-top:30px;
+
+    transition: background-color 400ms;
+}
+form button:hover{
+    background-color:#2fb86e;
+}
+
+#page-create-point .items-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.items-grid li{
+    background-color: #f5f5f5;
+    list-style: none;
+    border: 2px solid #f5f5f5;
+    border-radius:8px;
+    height:180px;
+
+    padding:32px 24px 16px;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    cursor: pointer;
+    
+}
+
+.items-grid li span{
+    flex: 1;
+    display:flex;
+    align-items: center;
+    color: var(--title-color);
+    margin-top:12px;
+}
+
+.items-grid li.selected{
+    background-color: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+.items-grid li img,
+.items-grid li span{
+    pointer-events:none;
+}

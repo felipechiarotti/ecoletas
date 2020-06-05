@@ -60,7 +60,7 @@
     margin-top:40px;
     background: var(--primary-color);
 
-    transition:400ms;
+    transition: background-color 400ms;
 }
 
 #page-home main a:hover{
